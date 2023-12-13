@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfMagazinRogozhnikovaAddEditDel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMagazinRogozhnikovaAddEditDel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Rectangle Width="600" Height="500" Margin="0,0,0,-16">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="Orange" Offset="0" />
+                    <GradientStop Color="Red" Offset="1" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock Text="Authorization" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FFD2CA44" FontWeight="Bold" Width="276" Opacity="0.8" FontFamily="Comic Sans MS">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <StackPanel MaxWidth="500" Margin="0,137,0,0">
+            <TextBlock Text="Login" FontSize="20" HorizontalAlignment="Center" Foreground="#FFD2CA44" FontWeight="Bold" Width="313" Opacity="0.8" FontFamily="Comic Sans MS">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBox Name="tbLogin" Width="314" Height="24" Foreground="#FF8C5D07" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="15"/>
+            <TextBlock Text="Password" FontSize="20" HorizontalAlignment="Center" Foreground="#FFD2CA44" FontWeight="Bold" Width="313" Opacity="0.8" FontFamily="Comic Sans MS">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBox Name="tbPassword" Width="314" Height="24" Foreground="#FF8C5D07" FontFamily="Comic Sans MS" FontSize="15" FontWeight="Bold"/>
+
+            <Button Content="Enter" FontSize="20" Margin="40,30" Background="#FFD2CA44" Foreground="#FF8C5D07" Click="Authorization_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Opacity="0.8" Width="317">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            
+        </StackPanel>
+        <Image Margin="419,327,10,10" Source="/Resources/9102309_enter_button_social media_keyboard_computer_icon.png" Stretch="Fill"/>
+
+        <Frame Name="FrameNav"/>
+
+    </Grid>
+</Window>

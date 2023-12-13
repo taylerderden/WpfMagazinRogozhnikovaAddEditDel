@@ -1,0 +1,9 @@
+﻿<Application x:Class="WpfMagazinRogozhnikovaAddEditDel.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfMagazinRogozhnikovaAddEditDel"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <BitmapImage x:Key="NoPicture" UriSource="Resources/9102309_enter_button_social media_keyboard_computer_icon.png"/>
+    </Application.Resources>
+</Application>
